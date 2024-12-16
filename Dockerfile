@@ -14,6 +14,9 @@ RUN pip install --upgrade pip
 # Instalar dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Instalar Ruff 
+RUN pip install ruff
+
 # Establecer el directorio raíz en PYTHONPATH para los tests
 ENV PYTHONPATH=/app
 
